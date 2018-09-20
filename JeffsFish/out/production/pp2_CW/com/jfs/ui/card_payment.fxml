@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jfs.controller.CardPayment">
+   <children>
+      <VBox layoutX="42.0" layoutY="61.0" prefHeight="184.0" prefWidth="117.0">
+         <children>
+            <Label prefHeight="81.0" prefWidth="118.0" text="Card Number">
+               <padding>
+                  <Insets bottom="30.0" top="30.0" />
+               </padding>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="144.0" text="Pin Number">
+               <padding>
+                  <Insets bottom="30.0" top="30.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="173.0" layoutY="84.0" prefHeight="184.0" prefWidth="255.0">
+         <children>
+            <TextField fx:id="cardNumber">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <PasswordField fx:id="pinNumber">
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </PasswordField>
+         </children>
+      </VBox>
+      <Button fx:id="purchase" layoutX="240.0" layoutY="292.0" mnemonicParsing="false" onAction="#purchase" prefHeight="31.0" prefWidth="117.0" text="Purchase" />
+      <Label layoutX="198.0" layoutY="20.0" prefHeight="35.0" prefWidth="255.0" text="Credit Card Payment" textFill="#1b02f5">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

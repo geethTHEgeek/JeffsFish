@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="474.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jfs.controller.ProductCatalogue">
+   <children>
+      <ChoiceBox fx:id="productsChoiceBox" layoutX="257.0" layoutY="62.0" prefHeight="31.0" prefWidth="172.0" />
+      <ImageView fx:id="image" fitHeight="235.0" fitWidth="229.0" layoutX="16.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+      <ChoiceBox fx:id="quantityChoiceBox" layoutX="445.0" layoutY="62.0" prefHeight="31.0" prefWidth="83.0" />
+      <Label fx:id="priceTag" layoutX="25.0" layoutY="335.0" prefHeight="86.0" prefWidth="210.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="addToCartBtn" layoutX="544.0" layoutY="62.0" mnemonicParsing="false" onAction="#addToCart" prefWidth="160.0" text="Add to cart" />
+      <Button fx:id="buyNowBtn" layoutX="486.0" layoutY="366.0" mnemonicParsing="false" onAction="#buyNow" prefHeight="77.0" prefWidth="210.0" text="View Cart" textAlignment="RIGHT">
+         <font>
+            <Font size="36.0" />
+         </font></Button>
+      <Label layoutX="25.0" layoutY="307.0" prefHeight="39.0" prefWidth="144.0" text="Unit Price">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="&lt;&lt;back" />
+      <Label layoutX="312.0" layoutY="16.0" prefHeight="28.0" prefWidth="117.0" text="Shop Here" textFill="#4b05fc">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

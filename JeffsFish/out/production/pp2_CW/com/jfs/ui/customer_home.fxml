@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jfs.controller.CustomerHome">
+   <children>
+      <Button layoutX="228.0" layoutY="93.0" mnemonicParsing="false" onAction="#goToProductCatalogue" prefHeight="35.0" prefWidth="144.0" text="Product Catalogue" />
+      <Button layoutX="228.0" layoutY="183.0" mnemonicParsing="false" onAction="#goToEmailInquiry" prefHeight="35.0" prefWidth="144.0" text="Email Inquiry" />
+      <Button layoutX="228.0" layoutY="269.0" mnemonicParsing="false" onAction="#goToModifyAccount" prefHeight="35.0" prefWidth="144.0" text="Modify Account" />
+      <Label fx:id="label" layoutX="217.0" layoutY="35.0" prefHeight="35.0" prefWidth="231.0" text="Customer Home" textFill="#3003f8">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl1" layoutX="7.0" layoutY="14.0" prefHeight="21.0" prefWidth="285.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
